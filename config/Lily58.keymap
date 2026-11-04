@@ -70,7 +70,7 @@
             //                     | ALT  | GUI  | LOWER|  SPACE |  | ENTER | RAISE| BSPC  | GUI   |
 
             bindings = <
-&kp ESC           &kp N1              &kp N2   &kp N3    &kp N4             &kp N5                                                                   &kp SYSREQ             &kp N6    &kp N7     &kp N8   &kp N9              &kp N0
+&kp ESC           &kp N1              &kp N2   &kp N3    &kp N4             &kp N5                                                                   &kp PRINTSCREEN        &kp N6    &kp N7     &kp N8   &kp N9              &kp N0
 &kp TAB           &kp Q               &kp W    &kp F     &kp P              &kp B                                                                    &kp J                  &kp L     &kp U      &kp Y    &kp MINUS           &kp MINUS
 &kp LEFT_SHIFT    &lt 1 A             &lt 3 R  &kp S     &kp T              &kp G                                                                    &kp M                  &kp N     &kp E      &kp I    &kp O               &kp SEMICOLON
 &kp LEFT_CONTROL  &mt LEFT_CONTROL Z  &kp X    &kp C     &kp D              &kp V         &kp LS(LC(LA(LGUI)))          &kp LG(ENTER)                &kp K                  &kp H     &kp COMMA  &kp DOT  &mt RIGHT_ALT FSLH  &lt 4 GRAVE
