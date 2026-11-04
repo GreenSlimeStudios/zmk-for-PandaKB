@@ -23,6 +23,30 @@
         };
     };
 
+    combos {
+        compatible = "zmk,combos";
+
+        vim-cmd {
+            bindings = <&vim_make_cmd>;
+            key-positions = <55 54>;
+        };
+
+        quota {
+            bindings = <&kp DOUBLE_QUOTES>;
+            key-positions = <52 51>;
+        };
+    };
+
+    macros {
+        vim_make_cmd: vim_make_cmd {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp ESCAPE &kp COLON>, <&macro_press>;
+
+            label = "VIM_MAKE_CMD";
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
@@ -38,7 +62,7 @@
 &kp ESC           &kp N1              &kp N2   &kp N3    &kp N4             &kp N5                                                            &kp SYSREQ  &kp N6    &kp N7     &kp N8   &kp N9              &kp N0
 &kp TAB           &kp Q               &kp W    &kp F     &kp P              &kp B                                                             &kp J       &kp L     &kp U      &kp Y    &kp MINUS           &kp MINUS
 &kp LEFT_SHIFT    &lt 1 A             &lt 3 R  &kp S     &kp T              &kp G                                                             &kp M       &kp N     &kp E      &kp I    &kp O               &kp SEMICOLON
-&kp LEFT_CONTROL  &mt LEFT_CONTROL Z  &kp X    &kp C     &kp D              &kp V            &kp C_MUTE                 &kp LG(ENTER)         &kp K       &kp H     &kp COMMA  &kp DOT  &mt RIGHT_ALT FSLH  &kp RSHFT
+&kp LEFT_CONTROL  &mt LEFT_CONTROL Z  &kp X    &kp C     &kp D              &kp V            &kp LS(LC(LA(LGUI)))       &kp LG(ENTER)         &kp K       &kp H     &kp COMMA  &kp DOT  &mt RIGHT_ALT FSLH  &kp RSHFT
                                                &kp LALT  &kp LC(BACKSPACE)  &lt 2 BACKSPACE  &mt LEFT_CONTROL ESCAPE    &mt LEFT_SHIFT SPACE  &kp ENTER   &kp BSPC  &kp RGUI
             >;
 
