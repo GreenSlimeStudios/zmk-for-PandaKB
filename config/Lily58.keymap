@@ -70,11 +70,11 @@
             //                     | ALT  | GUI  | LOWER|  SPACE |  | ENTER | RAISE| BSPC  | GUI   |
 
             bindings = <
-&kp ESC           &kp N1                     &kp N2   &kp N3    &kp N4             &kp N5                                                                   &kp PRINTSCREEN        &kp N6    &kp N7     &kp N8   &kp N9              &kp N0
-&kp TAB           &kp Q                      &kp W    &kp F     &kp P              &kp B                                                                    &kp J                  &kp L     &kp U      &kp Y    &kp MINUS           &kp MINUS
-&kp LEFT_SHIFT    &lt 1 A                    &lt 3 R  &kp S     &kp T              &kp G                                                                    &kp M                  &kp N     &kp E      &kp I    &kp O               &kp SEMICOLON
-&kp LEFT_CONTROL  &spacehold LEFT_CONTROL Z  &kp X    &kp C     &kp D              &kp V         &kp LS(LC(LA(LGUI)))          &kp LG(ENTER)                &kp K                  &kp H     &kp COMMA  &kp DOT  &mt RIGHT_ALT FSLH  &lt 4 GRAVE
-                                                      &kp LALT  &kp LC(BACKSPACE)  &lt 2 ESCAPE  &mt LEFT_CONTROL BACKSPACE    &spacehold LEFT_SHIFT SPACE  &spacehold LGUI ENTER  &kp BSPC  &kp RGUI
+&kp ESC           &kp N1                     &kp N2   &kp N3    &kp N4             &kp N5                                                                           &kp PRINTSCREEN        &kp N6    &kp N7     &kp N8   &kp N9              &kp N0
+&kp TAB           &kp Q                      &kp W    &kp F     &kp P              &kp B                                                                            &kp J                  &kp L     &kp U      &kp Y    &kp MINUS           &kp MINUS
+&kp LEFT_SHIFT    &lt 1 A                    &lt 3 R  &kp S     &kp T              &kp G                                                                            &kp M                  &kp N     &kp E      &kp I    &kp O               &kp SEMICOLON
+&kp LEFT_CONTROL  &spacehold LEFT_CONTROL Z  &kp X    &kp C     &kp D              &kp V                       &kp LS(LC(LA(LGUI)))    &kp LG(ENTER)                &kp K                  &kp H     &kp COMMA  &kp DOT  &mt RIGHT_ALT FSLH  &lt 4 GRAVE
+                                                      &kp LALT  &kp LC(BACKSPACE)  &mt LEFT_CONTROL BACKSPACE  &lt 2 BACKSPACE         &spacehold LEFT_SHIFT SPACE  &spacehold LGUI ENTER  &kp BSPC  &kp RGUI
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
@@ -92,10 +92,10 @@
 
         media {
             bindings = <
-&trans  &trans  &trans          &trans          &trans           &trans                       &trans     &trans           &trans             &trans      &trans     &trans
-&trans  &trans  &trans          &mmv MOVE_UP    &trans           &trans                       &trans     &kp LEFT         &kp DOWN           &kp UP      &kp RIGHT  &trans
-&trans  &trans  &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &trans                       &trans     &kp C_PAUSE      &trans             &trans      &trans     &trans
-&trans  &trans  &trans          &trans          &trans           &trans  &trans    &trans     &trans     &kp C_VOLUME_UP  &kp C_VOLUME_DOWN  &kp C_MUTE  &trans     &trans
+&trans  &trans  &trans          &trans          &trans           &trans                       &trans     &trans           &trans             &trans        &trans           &trans
+&trans  &trans  &trans          &mmv MOVE_UP    &trans           &trans                       &trans     &trans           &trans             &trans        &trans           &trans
+&trans  &trans  &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &trans                       &trans     &kp LEFT_ARROW   &kp DOWN           &kp UP_ARROW  &kp RIGHT_ARROW  &trans
+&trans  &trans  &trans          &trans          &trans           &trans  &trans    &trans     &trans     &kp C_VOLUME_UP  &kp C_VOLUME_DOWN  &kp C_MUTE    &trans           &trans
                                 &trans          &trans           &trans  &trans    &mkp LCLK  &mkp RCLK  &trans           &trans
             >;
         };
